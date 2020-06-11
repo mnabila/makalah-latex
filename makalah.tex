@@ -1,0 +1,27 @@
+\documentclass[12pt, a4paper]{article}
+
+% menggunakan library tambahan
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{ragged2e}
+\usepackage[utf8]{inputenc}
+\usepackage[bahasa, english]{babel}
+\usepackage{graphicx}
+\usepackage{biblatex}
+
+\setcounter{secnumdepth}{0}
+\addbibresource{daftarpustaka.bib}
+
+\begin{document}
+\thispagestyle{empty}
+\include{cover}
+\justifying
+\pagenumbering{roman}
+\include{katapengantar}
+\tableofcontents
+\pagenumbering{arabic}
+\include{bab1}
+\include{bab2}
+\include{bab3}
+\include{daftarpustaka}
+% apabila ingin menambahkan bab tambahan seperti bab 4 dan seterusnya silahkan ikuti contekannya diatas
+\end{document}
